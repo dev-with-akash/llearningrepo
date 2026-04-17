@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: akash
+
+  data:
+   mongodb:
+      uri:mongodb://localhost:27017/departmentdb

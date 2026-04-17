@@ -1,13 +1,13 @@
-package com.example.akash;
+package com.yadavtech.UserAuthService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AkashApplication {
+public class UserAuthServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AkashApplication.class, args);
+		SpringApplication.run(UserAuthServiceApplication.class, args);
 	}
 
 }
