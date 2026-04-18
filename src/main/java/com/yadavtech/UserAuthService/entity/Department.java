@@ -13,9 +13,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Department {
 
     @Id
-    private String Id;
-    private String DepartmentName;
-    private String DepartmentAddress;
-    private String Code;
+    private String id;
+    private String departmentName;
+    private String departmentAddress;
+    private String code;
 
 }

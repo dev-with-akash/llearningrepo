@@ -18,4 +18,6 @@ public interface DepartmentService {
     Department updateDepartmentName(String departmentName);
 
     Department updateDepartmentPartially(Department department, String departmentId);
+
+    Department fetchDepartmentWithId(String departmentId);
 }
