@@ -22,4 +22,5 @@ public class UserController {
         String response = userService.registerUser(user);
         return  ResponseEntity.ok(response);
     }
+
 }

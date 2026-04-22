@@ -1,6 +1,7 @@
 package com.yadavtech.UserAuthService.service;
 
 import com.yadavtech.UserAuthService.entity.Department;
+import com.yadavtech.UserAuthService.exception.DepartmentNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,5 +20,5 @@ public interface DepartmentService {
 
     Department updateDepartmentPartially(Department department, String departmentId);
 
-    Department fetchDepartmentWithId(String departmentId);
+    Department fetchDepartmentWithId(String departmentId) throws DepartmentNotFoundException;
 }
