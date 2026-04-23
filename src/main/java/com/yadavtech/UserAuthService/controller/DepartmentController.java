@@ -1,6 +1,7 @@
 package com.yadavtech.UserAuthService.controller;
 
 import com.yadavtech.UserAuthService.entity.Department;
+import com.yadavtech.UserAuthService.exception.DepartmentNotFoundException;
 import com.yadavtech.UserAuthService.service.DepartmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +57,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/departments/{departmentId}")
-    public Department fetchDepartmentWithId (@PathVariable String departmentId){
+    public Department fetchDepartmentWithId (@PathVariable String departmentId) throws DepartmentNotFoundException {
         return departmentService.fetchDepartmentWithId(departmentId);
     }
 
